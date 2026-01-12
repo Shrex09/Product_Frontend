@@ -1,0 +1,127 @@
+.home-container {
+    width: 100%;
+    height: 100%;
+    background-color: #F8F9FD;
+    /* Light gray/white background for home */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: #1A1F2B;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* Header Styles */
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-logo img {
+    width: 32px;
+    height: 32px;
+}
+
+.header-logo h1 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #1A1F2B;
+    margin: 0;
+    font-style: italic;
+}
+
+.cart-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #F1F2F6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+/* Search Bar Styles */
+.search-container {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 14px 44px;
+    /* Space for icons */
+    border-radius: 12px;
+    border: none;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    font-size: 0.95rem;
+    color: #1A1F2B;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #A0AEC0;
+}
+
+.mic-icon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #A0AEC0;
+}
+
+/* Section Headers */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.see-more {
+    font-size: 0.85rem;
+    color: #FF6B35;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
