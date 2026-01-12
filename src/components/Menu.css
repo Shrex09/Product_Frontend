@@ -1,0 +1,207 @@
+/* Overlay */
+.menu-overlay {
+    position: absolute;
+    /* Changed from fixed to stay within #root */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    /* Or flex-start for left side, design looks like full screen or side */
+}
+
+/* Container - assuming full screen or large drawer based on image */
+.menu-container {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 24px;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Header */
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.menu-title {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #1A1F2B;
+    flex: 1;
+    text-align: center;
+}
+
+.menu-close-btn {
+    width: 24px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #718096;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* User Profile Row */
+.menu-profile-row {
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #EDF2F7;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.menu-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 16px;
+}
+
+.menu-user-info {
+    flex: 1;
+}
+
+.menu-user-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1A1F2B;
+    margin-bottom: 4px;
+}
+
+.menu-user-phone {
+    font-size: 0.9rem;
+    color: #A0AEC0;
+}
+
+/* Loyalty Row */
+.menu-loyalty-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #EDF2F7;
+    margin-bottom: 8px;
+    /* Spacing for next items */
+    cursor: pointer;
+}
+
+.menu-loyalty-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1A1F2B;
+}
+
+.menu-loyalty-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF5EB;
+    /* Light orange bg */
+    border-radius: 50%;
+    color: #FF7043;
+    /* Orange star */
+}
+
+.menu-loyalty-points {
+    background-color: #F7FAFC;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #1A1F2B;
+}
+
+/* Menu Items List */
+.menu-items-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    cursor: pointer;
+}
+
+.menu-item-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1A1F2B;
+    /* Darker text */
+}
+
+.menu-item-icon {
+    color: #A0AEC0;
+    /* Grey icons */
+    width: 20px;
+}
+
+.menu-item-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #A0AEC0;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+.menu-footer {
+    margin-top: auto;
+    padding-top: 32px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #A0AEC0;
+    font-size: 0.8rem;
+}
+
+.menu-logo-mark {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #1A1F2B;
+    display: flex;
+    align-items: center;
+}
+
+/* Logout specific style */
+.menu-item.logout .menu-item-left {
+    color: #1A1F2B;
+}

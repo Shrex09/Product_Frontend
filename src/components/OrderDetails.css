@@ -1,0 +1,188 @@
+/* Main Container */
+.order-details-container {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Header */
+.order-details-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.order-details-back-btn {
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F7FAFC;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #1A1F2B;
+    cursor: pointer;
+}
+
+.order-details-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1A1F2B;
+}
+
+/* Featured Item Header */
+.od-featured-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.od-featured-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-right: 16px;
+}
+
+.od-featured-info {
+    flex: 1;
+}
+
+.od-featured-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1A1F2B;
+    line-height: 1.3;
+    margin-bottom: 4px;
+}
+
+.od-featured-price {
+    background-color: #F7FAFC;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1A1F2B;
+    margin-bottom: 4px;
+}
+
+.od-featured-addons {
+    font-size: 0.85rem;
+    color: #A0AEC0;
+}
+
+/* Order Number & Status */
+.od-number-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.od-number-label {
+    font-size: 1rem;
+    color: #718096;
+}
+
+.od-number-value {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1A1F2B;
+}
+
+.od-status-badge {
+    background-color: #E6FFFA;
+    color: #38B2AC;
+    /* Green/Teal */
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Info Table Card */
+.od-info-card {
+    background-color: #F7FAFC;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.od-info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.od-info-row:last-child {
+    margin-bottom: 0;
+}
+
+.od-info-label {
+    color: #718096;
+}
+
+.od-info-value {
+    color: #1A1F2B;
+    font-weight: 600;
+    text-align: right;
+}
+
+/* Price Details */
+.od-price-details {
+    background-color: #F7FAFC;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.od-price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #718096;
+}
+
+.od-total-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #E2E8F0;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #1A1F2B;
+}
+
+/* Download Button */
+.od-download-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #F7FAFC;
+    color: #FF5252;
+    border: none;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: auto;
+}

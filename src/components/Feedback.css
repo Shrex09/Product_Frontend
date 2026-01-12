@@ -1,0 +1,130 @@
+/* Main Container */
+.feedback-container {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+/* Header */
+.feedback-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.feedback-back-btn {
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F7FAFC;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #1A1F2B;
+    cursor: pointer;
+}
+
+.feedback-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1A1F2B;
+}
+
+/* Rating Card */
+.rating-card {
+    background-color: #F7FAFC;
+    border-radius: 16px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.rating-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1A1F2B;
+    margin-bottom: 24px;
+}
+
+.stars-wrapper {
+    display: flex;
+    gap: 12px;
+}
+
+.star-icon {
+    width: 32px;
+    height: 32px;
+    color: #E2E8F0;
+    /* Default empty color */
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.star-icon.filled {
+    color: #FFC107;
+    /* Gold/Yellow */
+}
+
+/* Review Input */
+.review-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.review-label {
+    font-size: 1rem;
+    color: #718096;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.review-textarea {
+    width: 100%;
+    height: 120px;
+    padding: 16px;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    /* Or #F7FAFC as per design, looks white in image */
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: #1A1F2B;
+    resize: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.review-textarea::placeholder {
+    color: #A0AEC0;
+}
+
+.review-textarea:focus {
+    border-color: #FF5252;
+}
+
+/* Submit Button */
+.submit-feedback-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #FF5252;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}

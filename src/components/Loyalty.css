@@ -1,0 +1,151 @@
+/* Main Container */
+.loyalty-container {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+/* Header */
+.loyalty-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.loyalty-back-btn {
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F7FAFC;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #1A1F2B;
+    cursor: pointer;
+}
+
+.loyalty-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1A1F2B;
+}
+
+/* Points Card */
+.loyalty-card {
+    background-color: #F7FAFC;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loyalty-card-label {
+    font-size: 1rem;
+    color: #718096;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.loyalty-card-icon {
+    color: #FF7043;
+    background-color: #FFF5EB;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loyalty-card-value {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1A1F2B;
+}
+
+/* History Section */
+.loyalty-history-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1A1F2B;
+    margin-bottom: 16px;
+}
+
+.loyalty-list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* History Item */
+.loyalty-item {
+    display: flex;
+    margin-bottom: 16px;
+    /* Clean rows */
+}
+
+.loyalty-item-image {
+    width: 80px;
+    height: 60px;
+    /* Rectangular landscape in design */
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 16px;
+}
+
+.loyalty-item-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.loyalty-item-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1A1F2B;
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+.loyalty-item-points {
+    font-size: 0.9rem;
+    color: #718096;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 4px;
+}
+
+.loyalty-star-small {
+    color: #FF7043;
+    font-size: 0.9rem;
+}
+
+.loyalty-item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #A0AEC0;
+}
+
+.loyalty-price {
+    background-color: #F7FAFC;
+    color: #1A1F2B;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 8px;
+}

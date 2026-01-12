@@ -1,0 +1,143 @@
+/* Main Container */
+.success-container {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    /* Standard padding */
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+/* Green Seal Icon */
+.success-seal-container {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    80% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.seal-svg {
+    width: 100%;
+    height: 100%;
+    /* filter: drop-shadow(0 4px 6px rgba(46, 204, 113, 0.3)); */
+}
+
+/* Title */
+.success-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1A1F2B;
+    margin-bottom: 32px;
+    line-height: 1.3;
+}
+
+/* Details Card */
+.details-card {
+    width: 100%;
+    background-color: #F8F9FD;
+    /* Light gray background */
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.details-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+}
+
+.details-row:last-child {
+    margin-bottom: 0;
+}
+
+.details-label {
+    color: #718096;
+    font-weight: 500;
+}
+
+.details-value {
+    color: #1A1F2B;
+    font-weight: 700;
+}
+
+/* Latin Text (Placeholder) */
+.success-description {
+    font-size: 0.9rem;
+    color: #718096;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 90%;
+}
+
+/* Buttons */
+.success-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: auto;
+    /* Push to bottom if space allows */
+}
+
+.payment-btn {
+    width: 100%;
+    padding: 18px;
+    background-color: #FF5252;
+    /* Specific red from design */
+    color: white;
+    border: none;
+    border-radius: 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 82, 82, 0.3);
+    transition: transform 0.1s;
+}
+
+.payment-btn:active {
+    transform: scale(0.98);
+}
+
+.status-btn {
+    width: 100%;
+    padding: 18px;
+    background-color: #F1F4F9;
+    /* Light gray button */
+    color: #FF5252;
+    /* Red text */
+    border: none;
+    border-radius: 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}

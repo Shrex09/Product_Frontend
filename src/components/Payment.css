@@ -1,0 +1,222 @@
+/* Main Container */
+.payment-container {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    /* content padding handled in specific sections */
+}
+
+/* Scrollable Content */
+.payment-scroll-content {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 24px;
+}
+
+/* Header */
+.payment-header {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    /* box-shadow: 0 1px 0px rgba(0,0,0,0.05); */
+}
+
+/* ... existing styles ... */
+
+/* Pay Button Wrapper */
+.pay-btn-wrapper {
+    /* No longer fixed */
+    width: 100%;
+    padding: 24px;
+    background-color: #FFFFFF;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    z-index: 20;
+}
+
+.payment-title {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #1A1F2B;
+    flex: 1;
+    text-align: center;
+    margin-right: 40px;
+    /* Balance back button */
+}
+
+/* Bill Details Section */
+.bill-section {
+    padding: 0 24px;
+    margin-bottom: 24px;
+}
+
+.bill-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    font-size: 1rem;
+    color: #718096;
+    font-weight: 500;
+}
+
+.bill-row.total {
+    margin-top: 24px;
+    margin-bottom: 0;
+    color: #1A1F2B;
+    font-weight: 800;
+    font-size: 1.1rem;
+    border-top: 1px dashed #E2E8F0;
+    padding-top: 24px;
+}
+
+.split-bill-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #F7FAFC;
+    color: #FF5252;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+/* Tip Section */
+.tip-section {
+    padding: 0 24px;
+    margin-bottom: 32px;
+}
+
+.section-label {
+    font-size: 1rem;
+    color: #A0AEC0;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.tip-options {
+    display: flex;
+    gap: 12px;
+    /* overflow-x: auto; */
+    /* Uncomment if many options */
+    flex-wrap: wrap;
+}
+
+.tip-chip {
+    padding: 10px 16px;
+    background-color: #F7FAFC;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #1A1F2B;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+}
+
+.tip-chip.selected {
+    background-color: #1A1F2B;
+    color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(26, 31, 43, 0.2);
+}
+
+/* Payment Methods */
+.payment-methods-section {
+    padding: 0 24px;
+    margin-bottom: 24px;
+}
+
+.method-row {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background-color: #F7FAFC;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.method-row.selected {
+    background-color: #FFFFFF;
+    border-color: #E2E8F0;
+    /* Slight border for selected */
+}
+
+/* Custom Radio */
+.method-radio {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #CBD5E0;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.method-row.selected .method-radio {
+    background-color: #FF5252;
+    border-color: #FF5252;
+}
+
+.method-radio::after {
+    content: '';
+    width: 10px;
+    height: 6px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(-45deg) translate(1px, -1px);
+    opacity: 0;
+}
+
+.method-row.selected .method-radio::after {
+    opacity: 1;
+}
+
+.method-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    /* Placeholder styles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.method-name {
+    font-weight: 600;
+    color: #1A1F2B;
+    font-size: 1rem;
+}
+
+/* Pay Button Wrapper - defined above */
+
+.pay-btn {
+    width: 100%;
+    padding: 18px;
+    background-color: #1A1F2B;
+    /* Dark button from design? Or Red? Design has sticky button usually. Using Dark for contrast or Red from previous screens */
+    /* Looking at design: "Pay AED 90.00" - Usually sticky. Assuming Red or Dark. 
+       Let's use Red to match others or Dark to match "Make payment" flow?
+       Wait, previous "Make payment" was red. Let's stick to Red #FF5252 for primary actions.
+    */
+    background-color: #1A1F2B;
+    /* Actually design shows dark text for Total, maybe dark button? Let's go black/dark button for Payment to distinguish. */
+    color: white;
+    border: none;
+    border-radius: 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}

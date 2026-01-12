@@ -1,0 +1,113 @@
+.welcome-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #1A1E29;
+    color: var(--text-white);
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.welcome-content {
+    width: 100%;
+    max-width: 400px;
+    /* Mobile constraint */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+    /* Push logo down slightly */
+    padding-bottom: 20px;
+}
+
+/* Logo */
+.welcome-logo-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.welcome-logo-image {
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+    mix-blend-mode: screen;
+}
+
+/* Language Selection */
+.language-section {
+    flex: 1;
+    /* Take up available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+.lang-option {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    width: 120px;
+}
+
+.lang-option.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-white);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Bottom Section */
+.bottom-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.table-number {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    font-size: 1rem;
+}
+
+.table-number strong {
+    color: var(--text-white);
+    font-weight: 700;
+}
+
+.start-button {
+    width: 100%;
+    padding: 16px;
+    border-radius: 16px;
+    border: none;
+    background-color: #FF5252;
+    /* Fallback */
+    background: linear-gradient(90deg, #FF6B6B 0%, #FF5252 100%);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 82, 82, 0.3);
+    transition: transform 0.1s;
+}
+
+.start-button:active {
+    transform: scale(0.98);
+}

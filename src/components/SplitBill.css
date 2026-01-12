@@ -1,0 +1,234 @@
+/* Split Bill Modal Styles */
+
+/* Bottom Sheet Container */
+.split-bill-sheet {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    box-sizing: border-box;
+    animation: slideUp 0.3s ease-out;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Header */
+.split-header {
+    text-align: center;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.split-handle {
+    width: 40px;
+    height: 4px;
+    background-color: #E2E8F0;
+    border-radius: 2px;
+    margin: 0 auto 16px;
+}
+
+.split-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1A1F2B;
+    margin-bottom: 8px;
+}
+
+.split-total-label {
+    font-size: 0.9rem;
+    color: #718096;
+    margin-bottom: 4px;
+}
+
+.split-total-amount {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #1A1F2B;
+}
+
+/* Tabs */
+.split-tabs {
+    display: flex;
+    border-bottom: 1px solid #E2E8F0;
+    margin-bottom: 24px;
+}
+
+.split-tab {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    font-size: 0.95rem;
+    color: #A0AEC0;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.split-tab.active {
+    color: #1A1F2B;
+}
+
+.split-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #1A1F2B;
+}
+
+/* Scrollable List for Persons */
+.split-persons-list {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 24px;
+    /* max-height: 40vh; */
+    /* Optional constraint */
+}
+
+.split-section-label {
+    font-size: 0.9rem;
+    color: #A0AEC0;
+    margin-bottom: 16px;
+}
+
+/* Person Row */
+.person-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.person-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #EDF2F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #A0AEC0;
+    margin-right: 12px;
+}
+
+.person-name {
+    flex: 1;
+    font-weight: 600;
+    color: #1A1F2B;
+    font-size: 1rem;
+}
+
+.person-amount {
+    background-color: #F7FAFC;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1A1F2B;
+    margin-right: 12px;
+    min-width: 80px;
+    text-align: center;
+}
+
+/* Editable Input for Amount/Percentage */
+.person-input {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1A1F2B;
+    width: 80px;
+    text-align: center;
+    margin-right: 12px;
+    outline: none;
+}
+
+.person-input:focus {
+    border-color: #FF5252;
+}
+
+.validation-message {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #F7FAFC;
+}
+
+.validation-message.error {
+    color: #FF5252;
+    background-color: #FFF5F5;
+}
+
+.validation-message.success {
+    color: #48BB78;
+    background-color: #F0FFF4;
+}
+
+.person-delete {
+    color: #A0AEC0;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.person-delete:hover {
+    color: #FF5252;
+}
+
+/* Add Person */
+.add-person-row {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 8px;
+    color: #1A1F2B;
+    font-weight: 600;
+}
+
+.add-icon-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFF5F5;
+    color: #FF5252;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+/* Footer Button */
+.split-continue-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #FF5252;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
